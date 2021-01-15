@@ -1,0 +1,210 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>全民解析-vip视频在线解析</title>
+
+    <link href="img/favicon.ico" rel="shortcut icon" />
+    <meta name="keywords" content="vip视频解析,vip视频在线解析,vip解析,万能vip视频解析,vip视频全能解析,vip视频,手机vip视频解析,手机在线解析vip视频,优酷vip解析,爱奇艺vip解析,腾讯vip解析,乐视vip解析,芒果vip解析,vip音乐解析">
+    <meta name="description" content="全民解析VIP视频免费看，在线解析，vip视频解析，优酷vip解析，爱奇艺vip解析，腾讯vip解析，乐视vip解析，全网影视vip，芒果vip解析方便广大用户VIP视频服务，最新电影最新电视剧在线免费观看">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+	<meta name="bytedance-verification-code" content="9HFkjcM0R0WGL7UF2HRo" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff;
+        }
+	marquee{font:32px "宋体"}
+        h1 {
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+
+        .unit-100 a {
+            text-decoration: none;
+            display: inline-block;
+            width: 130px;
+            height: 30px;
+            line-height: 30px;
+            border: 3px solid #5cb85c;
+            margin-right: 14px;
+            /*padding-top: 5px;*/
+            padding-right: 20px;
+            /*padding-bottom: 5px;*/
+            padding-left: 20px;
+            margin-bottom: 5px;
+            color: #FFFFFF;
+            background: #5cb85c;
+            border-radius: 5px;
+        }
+
+        .myshuoming ul li {
+            margin-bottom: 10px;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            color: #777;
+        }
+
+        .footer ul li {
+            list-style: none;
+        }
+
+        .wenxin ul:first-child {
+        }
+
+        .wenxin ul li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            background: #5cb85c;
+            display: inline-block;
+            padding:3px 10px;
+            border-radius:5px;
+        }
+
+    </style>
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body background="/img/bj.png">
+<div class="container">
+    <section class="topbar">
+        <h1 class="text-center" style="font-weight: normal; color: #777">蚂蚁vip视频在线解析</h1>
+        <h3 class="text-center" style="font-weight: normal; color: #777">免费全网影视VIP视频vip会员免广告看电影！ 若播放异常，刷新，更换接口尝试哦！</h3>
+    </section>
+
+    <section class="content">
+        <section>
+            <div class="text-center" id="videodiv">
+                <video id="videoId" style="width: 100%; height: 500px;" controls="controls" autoplay="autoplay">
+                    <source id="video_path" src="" type="video/mp4" />
+                    <!--  <source src="/i/movie.webm" type="video/webm" />
+                     <object data="/i/movie.mp4" width="320" height="240"> -->
+                    <embed width="320" height="240" src="/i/movie.swf" />
+
+                    您的浏览器不支持 video 标签。
+                </video>
+            </div>
+        </section>
+
+
+        <section class="" style="margin-top: 30px;">
+
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                <div class="input-group">
+                    <div class="input-group-addon">选择接口</div>
+                    <select class="form-control jiekou">
+                        <option value="1" selected="">七号通用vip引擎系统【稳定通用】</option>
+                        <option value="2" selected="">六号通用vip引擎系统【稳定通用】</option>
+                        <option value="3" selected="">五号通用vip引擎系统【超级稳定通用】</option>
+                        <option value="4" selected="">四号通用vip引擎系统【稳定通用】</option>
+                        <option value="5" selected="">三号通用vip引擎系统【稳定通用】</option>
+                        <option value="6" selected="">二号通用vip引擎系统【稳定通用】</option>
+                        <option value="7" >一号通用vip引擎系统【稳定通用】</option>
+                        <option value="8" selected="true">默认引擎系统【稳定通用】</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                <div class="input-group">
+                    <div class="input-group-addon">输入网址</div>
+                    <input type="text" class="form-control" id="inputUrl" placeholder="请输入视频网址" />
+                </div>
+            </div>
+
+            <button type="button" id="btnOk"  style="margin-bottom: 10px;" class="btn btn-success btn-lg btn-block"><i class="fa">搜索</i></button>
+        </section>
+
+        <section class="myshuoming" style="margin: 0 auto;">
+            <h3 class="text-center" style="font-weight: normal; color: #777">全网影视VIP视频vip会员解析说明</h3>
+
+            <div>
+                <h4>操作指南</h4>
+                <ul style="list-style-type: none; font-size: 19px;" class="text-left">
+                    <!--<li>第一步进入各大视频网站，找到想要观看的VIP视频vip会员，然后复制链接（浏览器上的视频地址）</li>
+                    <li>第二步将复制的链接粘贴到本站播放地址，并点击开始解析</li>
+                    <li>第三步等待解析完成，即可免费观看VIP视频vip会员</li>
+                    <li>想要找会员电影免费看，下方搜索电影名，就能免费观看vip会员vip付费电影电视剧</li>
+		    -->
+			<li>第一步直接在上面输入框输入想看的电视剧或者电影名字,点击搜索</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="wenxin" style="margin: 0 auto;">
+            <h3 class="text-center" style="font-weight: normal; color: #777"></h3>
+
+            <div>
+                <h4>温馨提示</h4>
+                <ul style="list-style-type: none; font-size: 19px;" class="text-left">
+                    <li style="text-decoration: none"><a href="/help">图文使用教程(点击)</a></li>
+                    <li style="text-align:left;margin-top:10px;"><span style="background:#5cb85c;display:inline-block;border-radius:5px;padding:5px 10px;">本站视频源于互联网视频网站，仅供学习交流。已支持以下网站视频播放(包含VIP电影vip会员)</span></li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="text-center">
+            <div class="unit-100">
+                <div class="language">
+                    <a class="btn2 btn-outline2" href="http://www.le.com/" rel="nofollow" target="_blank">进入乐视视频</a>
+                    <a class="btn2 btn-outline2" href="https://www.iqiyi.com/" rel="nofollow" target="_blank">进入奇艺视频</a>
+                    <a class="btn2 btn-outline2" href="http://www.mgtv.com/" rel="nofollow" target="_blank">进入芒果视频</a>
+                    <a class="btn2 btn-outline2" href="http://www.tudou.com/" rel="nofollow" target="_blank">进入土豆视频</a>
+                    <br>
+                    <a class="btn2 btn-outline2" href="https://v.qq.com/" rel="nofollow" target="_blank">进入腾讯视频</a>
+                    <a class="btn2 btn-outline2" href="https://www.youku.com/" rel="nofollow" target="_blank">进入优酷视频</a>
+                    <a class="btn2 btn-outline2" href="https://tv.sohu.com/" rel="nofollow" target="_blank">进入搜狐视频</a>
+                    <a class="btn2 btn-outline2" href="http://www.pptv.com/" rel="nofollow" target="_blank">进入pptv视频</a>
+                </div>
+
+                <br>
+            </div>
+        </section>
+        <section class="myshuoming dashang" style="margin: 0 auto; overflow:hidden;">
+            <h3 class="text-left" style="font-weight: normal; color: #777;font-size:16px;"><img style="margin-top:-3px;margin-right:3px;" src="img/tuijian.gif" />打赏一下！感谢您的支持</h3>
+
+            <div class="row">
+                <div class="col-xs-6 col-md-offset-3 col-sm-3 pull-left">
+                    <div class="logo-lie">
+
+                        <img class="img-responsive " style="padding-top:4px;" src="img/alipay.jpg">
+                    </div>
+                </div>
+                <div class="col-xs-6  col-sm-3 ">
+                    <div class="logo-lie">
+                        <img class="img-responsive  "  src="img/weipay.jpg">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+    <section class="footer text-center">
+        <ul>
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278092146'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s9.cnzz.com/z_stat.php%3Fid%3D1278092146%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            <li>Copyright © 蚂蚁vip视频解析</li>
+            <li>本站仅供学习交流使用，我们尊重任何视频版权,本站不进行任何资源存储，只提供影视检索服务</li>
+                    </ul>
+    </section>
+</div>
+</body>
+</html>
+
+
+  <script src="js/index.js"></script>
